@@ -699,6 +699,7 @@ body {
   .modal-actions {
     flex-direction: column;
   }
+  
 }
 
 @media (max-width: 480px) {

@@ -1,6 +1,6 @@
 import { FaIndianRupeeSign } from "react-icons/fa6";
 
-
+import { FaHeart } from "react-icons/fa";
 
 function ProductCard({ product, onProductClick, onAddToCart, onToggleWishlist, isInWishlist }) {
   const handleWishlistClick = (e) => {
@@ -21,7 +21,7 @@ function ProductCard({ product, onProductClick, onAddToCart, onToggleWishlist, i
           className={`wishlist-btn ${isInWishlist(product.id) ? 'active' : ''}`}
           onClick={handleWishlistClick}
         >
-          ♥
+        <FaHeart />
         </button>
       </div>
       <div className="product-info">
