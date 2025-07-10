@@ -729,9 +729,7 @@ body {
 }
 @media (max-width: 768px) {
   .modal-content {
-    max-width: 95%;
-    max-height: 95vh;
-    padding: 1rem;
+    max-width: 90%;
   }
 
   .modal-body {
