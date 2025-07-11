@@ -14,6 +14,7 @@ body {
   background-color: #f8f9fa;
   color: #333;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 .container {
@@ -127,6 +128,7 @@ body {
   color: white;
   padding: 4rem 0;
   margin-bottom: 3rem;
+  width: 100%;
 }
 
 .hero .container {
@@ -648,9 +650,6 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  *{
-    overflow: hidden;
-  }
   .header-content {
     flex-direction: column;
     gap: 1rem;
@@ -732,54 +731,3 @@ body {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 768px) {
-  .modal-content {
-    max-width: 90%;
-  }
-
-  .modal-body {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  .modal-info h2 {
-    font-size: 1.5rem;
-  }
-
-  .modal-description {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .specifications h3 {
-    font-size: 1rem;
-  }
-
-  .specifications li {
-    font-size: 0.95rem;
-  }
-
-  .modal-footer {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-
-  .modal-price {
-    font-size: 1.5rem;
-  }
-
-  .wishlist-btn-large,
-  .add-to-cart-btn-large {
-    font-size: 0.9rem;
-    padding: 0.6rem 1.2rem;
-  }
-
-  .close-btn {
-    font-size: 1.5rem;
-    top: 10px;
-    right: 10px;
-  }
-} 
