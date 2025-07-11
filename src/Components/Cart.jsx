@@ -1,7 +1,7 @@
 import { FaPlus } from "react-icons/fa";
 import { FaMinus } from "react-icons/fa";
 import { IoIosCloseCircle } from "react-icons/io";
-
+import { FaIndianRupeeSign } from "react-icons/fa6";
 
 function Cart({ isOpen, cartItems, onClose, onRemoveItem, onUpdateQuantity }) {
   const total = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0)
@@ -25,7 +25,7 @@ function Cart({ isOpen, cartItems, onClose, onRemoveItem, onUpdateQuantity }) {
                 <img src={item.image} alt={item.name} />
                 <div className="item-info">
                   <h4>{item.name}</h4>
-                  <p>${item.price}</p>
+                  <p><FaIndianRupeeSign />{item.price}</p>
                 </div>
                 <div className="quantity-controls">
                   <button 
@@ -56,7 +56,7 @@ function Cart({ isOpen, cartItems, onClose, onRemoveItem, onUpdateQuantity }) {
         {cartItems.length > 0 && (
           <div className="cart-footer">
             <div className="cart-total">
-              <strong>Total: ${total.toFixed(2)}</strong>
+              <strong>Total: <FaIndianRupeeSign />{total.toFixed(2)}</strong>
             </div>
             <button className="checkout-btn">Proceed to Checkout</button>
           </div>
