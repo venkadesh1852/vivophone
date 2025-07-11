@@ -659,11 +659,13 @@ body {
   }
 
   .category-filter {
-    order: 1;
-    width: 100%;
-    margin-left: 0; /* ✅ Fix: removed 250px left margin */
-    padding: 0 1rem; /* Optional: add padding if needed */
-  }
+  order: 1;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+}
 
   .cart-section {
     order: 3;
